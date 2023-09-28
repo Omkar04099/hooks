@@ -1,9 +1,11 @@
 import {Switch, Route} from 'react-router-dom';
 import {CreatePost, PostDetail, Home, Navbar} from './'; 
+import {StyleRoot} from 'radium';
 
 
 function App() {
   return (
+    <StyleRoot>
     <div className="Container">
         <Navbar />
         <Switch>
@@ -12,6 +14,7 @@ function App() {
           <Route exact path='/create-post' component={CreatePost}/>
         </Switch>
     </div>
+    </StyleRoot>
   );
 }
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { firestore } from '../firebase';
 import { Link } from 'react-router-dom';
 
+
 function Home() {
   const [posts, setPosts] = useState([]);
 

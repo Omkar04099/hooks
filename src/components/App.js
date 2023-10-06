@@ -6,7 +6,7 @@ import {StyleRoot} from 'radium';
 function App() {
   return (
     <StyleRoot>
-    <div className="Container">
+    <div className="container">
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home}/>
